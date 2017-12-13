@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.wallet.zorro.ForgotActivity">
+
+    <EditText
+        android:id="@+id/etMob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bProceed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@android:color/white"
+        android:drawableStart="@drawable/ic_call_black_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Mobile No."
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColor="@android:color/white"
+
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/bProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etMob"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/etMob"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/button"
+        android:text="Proceed"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        />
+</RelativeLayout>

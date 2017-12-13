@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_welcome"
+        android:icon="@drawable/ic_savings_account"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_addMoney"
+        android:icon="@drawable/add_money_icon_new"
+        android:title="Add Money" />
+
+    <item
+        android:id="@+id/navigation_sendMoney"
+        android:icon="@drawable/send_money_success"
+        android:title="Send Money" />
+    <item
+        android:id="@+id/navigation_passBook"
+        android:icon="@drawable/passbook"
+        android:title="PassBook" />
+
+</menu>

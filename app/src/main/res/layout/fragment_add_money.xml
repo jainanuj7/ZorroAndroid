@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wallet.zorro.AddMoneyActivity"
+    android:background="@drawable/background">
+
+
+    <Button
+        android:id="@+id/bAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/button"
+        android:text="Add Money"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/etAmount"
+        android:layout_alignStart="@+id/etAmount"
+        />
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableLeft="@drawable/rupee3"
+        android:drawablePadding="10dp"
+
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:textColorHint="@android:color/white" />
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.wallet.zorro.SignupActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:drawablePadding="10dp"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/etMob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableStart="@drawable/ic_call_black_24dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="Mobile No."
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/background_light"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/etMob"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/white"
+        android:drawablePadding="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/background_light"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:text="Male"
+            android:buttonTint="#45C4BB"
+            android:textColor="@android:color/white"
+            />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:buttonTint="#45C4BB"
+
+            android:textColor="@android:color/white" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etQue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgGender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:hint="Security Question"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="34dp"
+        />
+
+    <EditText
+        android:id="@+id/etAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/etQue"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:hint="Answer"
+        android:paddingLeft="34dp"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/bSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAns"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button"
+        android:text="Sign Up"
+        android:layout_alignEnd="@+id/rgGender"
+        android:layout_alignStart="@+id/rgGender"
+        android:textColorHint="@android:color/white"/>
+
+
+</RelativeLayout>
